@@ -70,6 +70,13 @@
                 {/block:Exif}
             {/block:Panorama}
             
+            {block:Photoset}
+                {Photoset}
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+            {/block:Photoset}
+            
             {block:Quote}quote{/block:Quote}
             
             {block:Link}link{/block:Link}
