@@ -13,7 +13,10 @@
         <!-- Posts -->
         {block:Posts}
         <div id="post_{PostID}" class="post {PostType} {TagsAsClasses}">
-            {block:Text}text{/block:Text}
+            {block:Text}
+                {block:Title}<h1 class="title">{Title}</h1>{/block:Title}
+                <div class="body">{Body}</div>
+            {/block:Text}
             
             {block:Photo}photo{/block:Photo}
             
