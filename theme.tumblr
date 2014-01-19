@@ -91,7 +91,19 @@
                 {/block:Description}
             {/block:Link}
             
-            {block:Chat}chat{/block:Chat}
+            {block:Chat}
+                {block:Title}
+                <h1 class="title">{Title}</h1>
+                {/block:Title}
+                <ul class="conversation">
+                {block:Lines}
+                <li class="user_{UserNumber} {Alt}">
+                    {block:Label}<span class="label">{Label}</span>{/block:Label}
+                    <span class="line">{Line}</span>
+                </li>
+                {/block:Lines}
+                </ul>
+            {/block:Chat}
             
             {block:Audio}audio{/block:Audio}
             
