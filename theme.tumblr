@@ -23,7 +23,6 @@
                 {block:Caption}
                 <div class="caption">{Caption}</div>
                 {/block:Caption}
-                
                 {block:Exif}
                 <ul class="exif">
                     {block:Camera}
@@ -45,7 +44,31 @@
                 {/block:Exif}
             {/block:Photo}
             
-            {block:Panorama}pano{/block:Panorama}
+            {block:Panorama}
+                <img class="photo pano" alt="{PhotoAlt}" title="{PhotoAlt}" src="{PhotoURL-Panorama}" />
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                {block:Exif}
+                <ul class="exif">
+                    {block:Camera}
+                    <li class="camera">{Camera}</li>
+                    {/block:Camera}
+                    
+                    {block:Aperture}
+                    <li class="aperture">{Aperture}</li>
+                    {/block:Aperture}
+                    
+                    {block:Exposure}
+                    <li class="exposure">{Exposure}</li>
+                    {/block:Exposure}
+                    
+                    {block:FocalLength}
+                    <li class="focal_length">{FocalLength}</li>
+                    {/block:FocalLength}
+                </ul>
+                {/block:Exif}
+            {/block:Panorama}
             
             {block:Quote}quote{/block:Quote}
             
