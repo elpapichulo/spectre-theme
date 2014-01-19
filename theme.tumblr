@@ -84,7 +84,12 @@
                 {/block:Source}
             {/block:Quote}
             
-            {block:Link}link{/block:Link}
+            {block:Link}
+                <a href="{URL}" class="link" target="{Target}">{Name}</a>
+                {block:Description}
+                <div class="description">{Description}</div>
+                {/block:Description}
+            {/block:Link}
             
             {block:Chat}chat{/block:Chat}
             
