@@ -18,7 +18,32 @@
                 <div class="body">{Body}</div>
             {/block:Text}
             
-            {block:Photo}photo{/block:Photo}
+            {block:Photo}
+                <img class="photo" alt="{PhotoAlt}" title="{PhotoAlt}" src="{PhotoURL-500}" />
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                
+                {block:Exif}
+                <ul class="exif">
+                    {block:Camera}
+                    <li class="camera">{Camera}</li>
+                    {/block:Camera}
+                    
+                    {block:Aperture}
+                    <li class="aperture">{Aperture}</li>
+                    {/block:Aperture}
+                    
+                    {block:Exposure}
+                    <li class="exposure">{Exposure}</li>
+                    {/block:Exposure}
+                    
+                    {block:FocalLength}
+                    <li class="focal_length">{FocalLength}</li>
+                    {/block:FocalLength}
+                </ul>
+                {/block:Exif}
+            {/block:Photo}
             
             {block:Panorama}pano{/block:Panorama}
             
