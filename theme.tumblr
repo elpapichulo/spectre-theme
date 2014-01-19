@@ -77,7 +77,12 @@
                 {/block:Caption}
             {/block:Photoset}
             
-            {block:Quote}quote{/block:Quote}
+            {block:Quote}
+                <div class="quote {Length}">{Quote}</div>
+                {block:Source}
+                <div class="source">{Source}</div>
+                {/block:Source}
+            {/block:Quote}
             
             {block:Link}link{/block:Link}
             
