@@ -105,7 +105,37 @@
                 </ul>
             {/block:Chat}
             
-            {block:Audio}audio{/block:Audio}
+            {block:Audio}
+                {block:Caption}
+                <div class="caption">{Caption}</div>
+                {/block:Caption}
+                
+                {block:AudioEmbed}
+                    {AudioEmbed}
+                {/block:AudioEmbed}
+                
+                {block:AlbumArt}
+                    <img class="album_art" src="{AlbumArtURL}" />
+                {/block:AlbumArt}
+                
+                <ul class="details">
+                    {block:TrackName}
+                    <li class="trackname">{TrackName}</li>
+                    {/block:TrackName}
+                
+                    {block:Artist}
+                    <li class="artist">{Artist}</li>
+                    {/block:Artist}
+                    
+                    {block:Album}
+                    <li class="album">{Album}</li>
+                    {/block:Album}
+                </ul>
+                
+                {block:AudioPlayer}
+                    {AudioPlayer}
+                {/block:AudioPlayer}
+            {/block:Audio}
             
             {block:Video}video{/block:Video}
             
